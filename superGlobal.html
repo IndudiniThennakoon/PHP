@@ -7,8 +7,18 @@
     <title>htmlspecialchars and $_SERVER</title>
 </head>
 <body>
+    
     <!-- htmlspecialchars -  use for remove the unwanted characters-->
     
+    <from method ="post" action = "<?php echo htmlspecialchars($_SEVER['PHP_SELF']);?>" >
+        Name: <input type = "text" name ="name">
+
+        <br>
+
+        <input type ="submit" value = "Submit" name= "btnsubmit">
+        
+    </from>
+
     
 </body>
 </html>
