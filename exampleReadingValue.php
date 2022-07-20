@@ -7,6 +7,11 @@
         echo "<br/>Your Address: {$_POST['address']}";
         echo "<hr>";
        
+        // radio test
+
+        echo "<br/>Your Gender: {$_POST['gender']}"; 
+        echo "<hr>";
+
         
     }
 ?>
