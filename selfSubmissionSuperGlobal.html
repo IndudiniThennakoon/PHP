@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>htmlspecialchars and $_SERVER</title>
+</head>
+<body>
+    <!-- htmlspecialchars -  use for remove the unwanted characters-->
+    
+    <from method ="post" action = "<?php echo htmlspecialchars($_SEVER['PHP_SELF']);?>" >
+        Name: <input type = "text" name ="name">
+
+        <br>
+
+        <input type ="submit" value = "Submit" name= "btnsubmit">
+        
+    </from>
+
+    <?php
+        if(isset($_POST['btnsubmit'])){
+            echo "Hi ". $_POST["name"];
+        }
+    ?>
+</body>
+</html>
