@@ -48,8 +48,6 @@ echo $marks["Web"]; // print array value of secont index
 
 // Maths and Web are indexes and we can have our own index in Associative Arrays
 
-
-
 // associative arrays -> 2nd way
 $marks2 = array();
 $marks2["Maths"] = 32;
